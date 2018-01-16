@@ -8,6 +8,7 @@ $(document).ready(function(){
         return word;
       }
     });
-    $(".output").text(filterArray);
+    var reverseArray = filterArray.reverse();
+    $(".output").text(reverseArray.join(" "));
   });
 });
